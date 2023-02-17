@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 void RevNum (string Num){
@@ -11,9 +12,16 @@ void RevNum (string Num){
   
 }
 int main (){
-    string n;
+    int n;
     cout<<"enter the number"<<endl;
     cin>>n;
-    RevNum(n);
+    string X;
+    X = to_string(n);
+
+    if (1<=X.length()<10^9)
+    {
+         RevNum(X);
+    }
+   
     return 0;
 }
